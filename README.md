@@ -22,13 +22,15 @@ Request a powerful node early, because it takes some time for the scheduler to a
 ```bash
 sbatch --account=es_biol --time=5-00:00:00 \
     --gpus=nvidia_rtx_pro_6000:1 --gres=gpumem:96g \
-    --cpus-per-task=4 --mem-per-cpu=8G --tmp=100G \
+    --cpus-per-task=24 --mem-per-cpu=8000M --tmp=100G \
     --job-name=agent-node --wrap="sleep infinity"
 ```
 
+Each RTX PRO 6000 node has 192 cores and about 1.5 TB of RAM for 8 GPUs, so one GPU's fair share is 24 cores and about 192 GB of RAM (8000 MB per core).
+
 Always pass `--account=es_biol` explicitly. The default account only has access to a very limited number of GPUs, so jobs without it can wait a long time.
 
-Euler has many more RTX 3090 (32 nodes) and RTX 4090 (80 nodes) than RTX PRO 6000 (10 nodes), so a job requesting one of those is usually allocated sooner. They have 24 GB of GPU memory instead of 96 GB. To get whichever is free first, replace the `--gpus` line with `--gpus=rtx_3090,rtx_4090:1` and drop `--gres=gpumem:96g`. For all GPU types, see https://docs.hpc.ethz.ch/hardware/gpu_nodes/
+Euler has many more RTX 3090 (32 nodes) and RTX 4090 (80 nodes) than RTX PRO 6000 (10 nodes), so a job requesting one of those is usually allocated sooner. They have 24 GB of GPU memory instead of 96 GB, and their nodes have 128 cores and 384–513 GB of RAM for 8 GPUs, so one GPU's fair share is 16 cores and about 48 GB of RAM. To get whichever is free first, change the second and third lines to `--gpus=nvidia_geforce_rtx_3090,nvidia_geforce_rtx_4090:1` and `--cpus-per-task=16 --mem-per-cpu=3000M --tmp=100G`. For all GPU types, see https://docs.hpc.ethz.ch/hardware/gpu_nodes/
 
 Euler's Slurm batch settings (partitions, GPU types, resource options): https://docs.hpc.ethz.ch/batchsystem/slurm/
 
