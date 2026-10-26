@@ -29,3 +29,11 @@ sbatch -p cuda13pr.120h --time=5-00:00:00 \
 ## Claude Code
 
 - Memory and `CLAUDE.md` files: https://code.claude.com/docs/en/memory
+
+### Sandboxed Claude Code on Euler
+
+Three options for running Claude Code inside a Singularity/Apptainer container on a compute node, so it can run without permission prompts:
+
+- [euler-vibe](https://github.com/jurgjn/euler-vibe/): `euler-claude` starts Claude in a container, in a tmux session per project directory
+- [vibe-tunnel](https://github.com/DennisGankin/vibe-tunnel): VS Code + Claude Code in a container, opened from your laptop with one command; shared lab installation at `/cluster/project/beltrao/software/vibe-tunnel`
+- [euler_agents](https://github.com/juliabuhmann/euler_agents): `euler-agent-run` with explicit read-write and read-only mounts; optionally hand off the session to claude.ai/code or the mobile app
