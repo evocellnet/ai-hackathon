@@ -17,14 +17,15 @@ The directory `/cluster/work/beltrao/shared` on Euler contains:
 
 ## Requesting a GPU node
 
-Request a powerful node early, because it takes some time for the scheduler to allocate it:
+Request a powerful node early, because it takes some time for the scheduler to allocate it. Run this on an Euler login node:
 
 ```bash
-sbatch --account=es_biol --time=5-00:00:00 \
+euler-tunnel start --account=es_biol --time=5-00:00:00 \
     --gpus=nvidia_rtx_pro_6000:1 --gres=gpumem:96g \
-    --cpus-per-task=24 --mem-per-cpu=8000M --tmp=100G \
-    --job-name=agent-node --wrap="sleep infinity"
+    --cpus-per-task=24 --mem-per-cpu=8000M --tmp=100G
 ```
+
+`euler-tunnel start` takes the usual `sbatch` options. Check whether the job is running with `euler-tunnel status`, then connect to the node from your computer with `ssh euler-tunnel` (or VS Code's Remote SSH plugin). For the one-time setup, see https://docs.hpc.ethz.ch/connections/euler-tunnel/
 
 Each RTX PRO 6000 node has 192 cores and about 1.5 TB of RAM for 8 GPUs, so one GPU's fair share is 24 cores and about 192 GB of RAM (8000 MB per core).
 
