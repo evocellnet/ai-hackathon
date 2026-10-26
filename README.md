@@ -26,6 +26,8 @@ sbatch -p cuda13pr.120h --time=5-00:00:00 \
     --job-name=agent-node --wrap="sleep infinity"
 ```
 
+Euler's Slurm batch settings (partitions, GPU types, resource options): https://docs.hpc.ethz.ch/batchsystem/slurm/
+
 ## Claude Code
 
 - Memory and `CLAUDE.md` files: https://code.claude.com/docs/en/memory
