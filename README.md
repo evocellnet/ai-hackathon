@@ -20,7 +20,7 @@ The directory `/cluster/work/beltrao/shared` on Euler contains:
 Request a powerful node early, because it takes some time for the scheduler to allocate it:
 
 ```bash
-sbatch --account=es_beltrao -p cuda13pr.120h --time=5-00:00:00 \
+sbatch --account=es_beltrao --time=5-00:00:00 \
     --gpus=nvidia_rtx_pro_6000:1 --gres=gpumem:96g \
     --cpus-per-task=4 --mem-per-cpu=8G --tmp=100G \
     --job-name=agent-node --wrap="sleep infinity"
