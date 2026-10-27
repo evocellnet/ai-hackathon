@@ -1,48 +1,5 @@
 # ai-hackathon
 
-## Setting up Euler
+TODO: project description.
 
-- Set up passwordless SSH login: https://docs.hpc.ethz.ch/connections/ssh/
-- Use `euler-tunnel` to connect directly to batch nodes: https://docs.hpc.ethz.ch/connections/euler-tunnel/
-- Set up GitHub access with a personal access token: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
-
-## Shared data
-
-The directory `/cluster/work/beltrao/shared` on Euler contains:
-
-| Directory | Contents | Status |
-|---|---|---|
-| `alphafold/` | Copy of the AlphaFold database | Finished |
-| `rsyncPDB/` | Copy of the PDB | Still running |
-
-## Requesting a GPU node
-
-Request a powerful node early, because it takes some time for the scheduler to allocate it. Run this on an Euler login node:
-
-```bash
-euler-tunnel start --account=es_biol --time=5-00:00:00 \
-    --gpus=nvidia_rtx_pro_6000:1 --gres=gpumem:96g \
-    --cpus-per-task=24 --mem-per-cpu=8000M --tmp=100G
-```
-
-`euler-tunnel start` takes the usual `sbatch` options. Check whether the job is running with `euler-tunnel status`, then connect to the node from your computer with `ssh euler-tunnel` (or VS Code's Remote SSH plugin). For the one-time setup, see https://docs.hpc.ethz.ch/connections/euler-tunnel/
-
-Each RTX PRO 6000 node has 192 cores and about 1.5 TB of RAM for 8 GPUs, so one GPU's fair share is 24 cores and about 192 GB of RAM (8000 MB per core).
-
-Always pass `--account=es_biol` explicitly. The default account only has access to a very limited number of GPUs, so jobs without it can wait a long time.
-
-Euler has many more RTX 3090 (32 nodes) and RTX 4090 (80 nodes) than RTX PRO 6000 (10 nodes), so a job requesting one of those is usually allocated sooner. They have 24 GB of GPU memory instead of 96 GB, and their nodes have 128 cores and 384–513 GB of RAM for 8 GPUs, so one GPU's fair share is 16 cores and about 48 GB of RAM. To get whichever is free first, change the second and third lines to `--gpus=nvidia_geforce_rtx_3090,nvidia_geforce_rtx_4090:1` and `--cpus-per-task=16 --mem-per-cpu=3000M --tmp=100G`. For all GPU types, see https://docs.hpc.ethz.ch/hardware/gpu_nodes/
-
-Euler's Slurm batch settings (partitions, GPU types, resource options): https://docs.hpc.ethz.ch/batchsystem/slurm/
-
-## Claude Code
-
-- Memory and `CLAUDE.md` files: https://code.claude.com/docs/en/memory
-
-### Sandboxed Claude Code on Euler
-
-Three options for running Claude Code inside a Singularity/Apptainer container on a compute node, so it can run without permission prompts:
-
-- [euler-vibe](https://github.com/jurgjn/euler-vibe/): `euler-claude` starts Claude in a container, in a tmux session per project directory
-- [vibe-tunnel](https://github.com/DennisGankin/vibe-tunnel): VS Code + Claude Code in a container, opened from your laptop with one command; shared lab installation at `/cluster/project/beltrao/software/vibe-tunnel`
-- [euler_agents](https://github.com/juliabuhmann/euler_agents): `euler-agent-run` with explicit read-write and read-only mounts; optionally hand off the session to claude.ai/code or the mobile app
+For Euler setup notes, see [EULER.md](EULER.md).
