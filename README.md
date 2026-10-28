@@ -6,9 +6,9 @@ A week-long hackathon run by the Beltrao lab (ETH Zürich), Colm Ryan lab (UCD),
 
 - Cancer essentiality prediction: [ai-hackathon-cancer_essentiality](https://github.com/QuantitativeBiology/ai-hackathon-cancer_essentiality) — predicting CRISPR-Cas9 gene essentiality in cancer cell lines from molecular profiles (DepMap 26Q3)
 - Cancer genome-scale metabolic model: [Cancer metabolic model](https://github.com/QuantitativeBiology/ai-hackathon-humangem) — Predicting cancer context specific the human genome-scale metabolic models
-- Pocket prediction: [burrow](https://github.com/zoidpuff/burrow) — BURROW, fast protein ligand-binding pocket detection and ranking
+- Pocket prediction: [burrow](https://github.com/zoidpuff/pocket-detect-agents) — BURROW, fast protein ligand-binding pocket detection and ranking
 - Ligand docking
-- Pocket similarity: [pocketcompare](https://github.com/zoidpuff/pocketcompare) — pocketcompare creates fast, ligand-free fingerprints as descriptors of protein binding pockets.
+- Pocket similarity: [pocketcompare](https://github.com/zoidpuff/pocketcompare-agents) — pocketcompare creates fast, ligand-free fingerprints as descriptors of protein binding pockets.
 - Kinase targets
 - Kinase activity
 - Protein stability [physDDG](https://github.com/DennisGankin/physDDG) — physDDG - physics-inspired protein mutation stability predictor
