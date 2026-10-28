@@ -12,7 +12,7 @@ A week-long hackathon run by the Beltrao lab (ETH Zürich), Colm Ryan lab (UCD),
 - Ligand docking: [ADock](https://github.com/juliabuhmann/adock) — ADock is a protein–ligand docking engine for GPU 
 - Pocket similarity: [pocketcompare](https://github.com/zoidpuff/pocketcompare-agents) — pocketcompare creates fast, ligand-free fingerprints as descriptors of protein binding pockets.
 - Kinase targets: [agentKinaseSubPred](https://github.com/JulianvanGerwen/agentKinaseSubPred) — Predicting human kinase targets 
-- Kinase activity
+- Kinase activity: [agentKinaseActivity](https://github.com/JulianvanGerwen/agentKinaseActivity) — Predicting human kinase activities from phosphoproteomics data 
 - Protein stability [physDDG](https://github.com/DennisGankin/physDDG) — physDDG - physics-inspired protein mutation stability predictor
 - Coloc analysis
 - Orthology prediction: [Ancestra](https://github.com/evocellnet/hackathon-p10-orthology-prediction) — Ancestra infers hierarchical orthologous groups (HOGs) from a set of proteomes
