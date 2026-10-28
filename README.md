@@ -8,7 +8,7 @@ A week-long hackathon run by the Beltrao lab (ETH Zürich), Colm Ryan lab (UCD),
 - Cancer genome-scale metabolic model: [Cancer metabolic model](https://github.com/QuantitativeBiology/ai-hackathon-humangem) — Predicting cancer context specific the human genome-scale metabolic models
 - Pocket prediction: [burrow](https://github.com/zoidpuff/burrow) — BURROW, fast protein ligand-binding pocket detection and ranking
 - Ligand docking
-- Pocket similarity: [pocketcompare]([https://github.com/zoidpuff/burrow](https://github.com/zoidpuff/pocketcompare) — pocketcompare creates fast, ligand-free fingerprints as descriptors of protein binding pockets.
+- Pocket similarity: [pocketcompare](https://github.com/zoidpuff/pocketcompare) — pocketcompare creates fast, ligand-free fingerprints as descriptors of protein binding pockets.
 - Kinase targets
 - Kinase activity
 - Protein stability
