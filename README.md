@@ -11,7 +11,7 @@ A week-long hackathon run by the Beltrao lab (ETH Zürich), Colm Ryan lab (UCD),
 - Pocket similarity: [pocketcompare](https://github.com/zoidpuff/pocketcompare) — pocketcompare creates fast, ligand-free fingerprints as descriptors of protein binding pockets.
 - Kinase targets
 - Kinase activity
-- Protein stability
+- Protein stability [physDDG](https://github.com/DennisGankin/physDDG) — physDDG - physics-inspired protein mutation stability predictor
 - Coloc analysis
 - Orthology prediction: [Ancestra](https://github.com/evocellnet/hackathon-p10-orthology-prediction) — Ancestra infers hierarchical orthologous groups (HOGs) from a set of proteomes
 - MS analysis
