@@ -9,7 +9,7 @@ A week-long hackathon run by the Beltrao lab (ETH Zürich), Colm Ryan lab (UCD),
 - Co-complex membership from Coessentiality: ([Coessentiality](https://github.com/cancergenetics/ai-hackathon-Coessentiality)  — Predicting human co-complex membership from co-essentiality
 - Trans-transcriptomic consequences of CNV: ([DepMapTR](https://github.com/cancergenetics/ai-hackathon-DepMapRegulation/)  — Predicting trans-transcriptomic consequences of copy-number change
 - Pocket prediction: [burrow](https://github.com/zoidpuff/pocket-detect-agents) — BURROW, fast protein ligand-binding pocket detection and ranking
-- Ligand docking
+- Ligand docking: [ADock](https://github.com/juliabuhmann/adock) — ADock is a protein–ligand docking engine for GPU 
 - Pocket similarity: [pocketcompare](https://github.com/zoidpuff/pocketcompare-agents) — pocketcompare creates fast, ligand-free fingerprints as descriptors of protein binding pockets.
 - Kinase targets
 - Kinase activity
