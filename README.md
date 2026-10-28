@@ -1,10 +1,11 @@
 # ai-hackathon
 
-A week-long hackathon run by the Beltrao lab at ETH Zurich to assess the bioinformatics capabilities of agentic AI. Each project gives Claude (Opus 5.5, delegating to Opus/Sonnet subagents) a "predict X" problem and lets it build, benchmark and write up a method with minimal human intervention. Humans then verify the methodology and benchmarking. Projects run on Euler, each in its own sub-folder of the shared project space, with common large datasets (e.g. AlphaFold DB, PDB) stored once in a read-only location.
+A week-long hackathon run by the Beltrao lab (ETH Zürich), Colm Ryan lab (UCD), Emanuel Gonçalves lab (IST) and Christophe Dessimoz lab (UNIL) to assess the bioinformatics capabilities of agentic AI. Each project gives Claude (Opus 5.5, delegating to Opus/Sonnet subagents) a "predict X" problem and lets it build, benchmark and write up a method with minimal human intervention. Humans then verify the methodology and benchmarking. Projects run on Euler, each in its own sub-folder of the shared project space, with common large datasets (e.g. AlphaFold DB, PDB) stored once in a read-only location.
 
 ## Projects
 
 - Cancer essentiality prediction: [ai-hackathon-cancer_essentiality](https://github.com/QuantitativeBiology/ai-hackathon-cancer_essentiality) — predicting CRISPR-Cas9 gene essentiality in cancer cell lines from molecular profiles (DepMap 26Q3)
+- Cancer genome-scale metabolic model: [Cancer metabolic model](https://github.com/QuantitativeBiology/ai-hackathon-humangem) — Predicting cancer context specific the human genome-scale metabolic models
 - Pocket prediction: [burrow](https://github.com/zoidpuff/burrow) — BURROW, fast protein ligand-binding pocket detection and ranking
 - Ligand docking
 - Pocket similarity
