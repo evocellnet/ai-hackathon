@@ -14,9 +14,9 @@ A week-long hackathon run by the Beltrao lab (ETH Zürich), Colm Ryan lab (UCD),
 - Kinase targets: [agentKinaseSubPred](https://github.com/JulianvanGerwen/agentKinaseSubPred) — Predicting human kinase targets 
 - Kinase activity: [agentKinaseActivity](https://github.com/JulianvanGerwen/agentKinaseActivity) — Predicting human kinase activities from phosphoproteomics data 
 - Protein stability [physDDG](https://github.com/DennisGankin/physDDG) — physDDG - physics-inspired protein mutation stability predictor
-- Coloc analysis
+- Coloc analysis - 
 - Orthology prediction: [Ancestra](https://github.com/evocellnet/hackathon-p10-orthology-prediction) — Ancestra infers hierarchical orthologous groups (HOGs) from a set of proteomes
-- MS analysis
+- MS analysis [Vulcan](https://github.com/pedrobeltrao/vulcan-proteomics) — Vulcan - GPU/CPU co-designed engine for repository-scale MS proteomics
 
 ## AI disclosure header
 
