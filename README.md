@@ -1,22 +1,37 @@
 # ai-hackathon
 
-A week-long hackathon run by the Beltrao lab (ETH Zürich), Colm Ryan lab (UCD), Emanuel Gonçalves lab (IST) and Christophe Dessimoz lab (UNIL) to assess the bioinformatics capabilities of agentic AI. Each project gives Claude (Opus 5.5, delegating to Opus/Sonnet subagents) a "predict X" problem and lets it build, benchmark and write up a method with minimal human intervention. Humans then verify the methodology and benchmarking. Projects run on Euler, each in its own sub-folder of the shared project space, with common large datasets (e.g. AlphaFold DB, PDB) stored once in a read-only location.
+A week-long hackathon run by the Beltrao lab (ETH Zürich), Colm Ryan lab (UCD), Emanuel Gonçalves lab (IST) and Christophe Dessimoz lab (UNIL) to assess the bioinformatics capabilities of agentic AI. Claude (Opus 5.5, delegating to Opus/Sonnet subagents) ran each project with minimal human intervention. Humans then verify the methodology and benchmarking. Projects run on Euler, each in its own sub-folder of the shared project space, with common large datasets (e.g. AlphaFold DB, PDB) stored once in a read-only location.
 
-## Projects
+The hackathon had two phases:
+
+- **Phase 1 – prediction challenges.** Each project gave Claude a "predict X" problem and let it build, benchmark and write up a method.
+- **Phase 2 – discovery projects.** Open-ended biological questions, tackled with the tools built in phase 1.
+
+## Phase 1: prediction challenges
 
 - Cancer essentiality prediction: [ai-hackathon-cancer_essentiality](https://github.com/QuantitativeBiology/ai-hackathon-cancer_essentiality) — predicting CRISPR-Cas9 gene essentiality in cancer cell lines from molecular profiles (DepMap 26Q3)
-- Cancer genome-scale metabolic model: [Cancer metabolic model](https://github.com/QuantitativeBiology/ai-hackathon-humangem) — Predicting cancer context specific the human genome-scale metabolic models
-- Co-complex membership from Coessentiality: ([Coessentiality](https://github.com/cancergenetics/ai-hackathon-Coessentiality)  — Predicting human co-complex membership from co-essentiality
-- Trans-transcriptomic consequences of CNV: ([DepMapTR](https://github.com/cancergenetics/ai-hackathon-DepMapRegulation/)  — Predicting trans-transcriptomic consequences of copy-number change
+- Cancer genome-scale metabolic model: [Cancer metabolic model](https://github.com/QuantitativeBiology/ai-hackathon-humangem) — predicting context-specific human genome-scale metabolic models for cancer
+- Co-complex membership from co-essentiality: [Coessentiality](https://github.com/cancergenetics/ai-hackathon-Coessentiality) — predicting human co-complex membership from co-essentiality
+- Trans-transcriptomic consequences of CNV: [DepMapTR](https://github.com/cancergenetics/ai-hackathon-DepMapRegulation/) — predicting trans-transcriptomic consequences of copy-number change
+- Yeast synthetic lethality: [YeastSLPrediction](https://github.com/cancergenetics/ai-hackathon-YeastSLPrediction) — predicting synthetic lethal gene pairs in budding yeast
+- Fission yeast synthetic lethality: [PombeSLPrediction](https://github.com/cancergenetics/ai-hackathon-PombeSLPrediction) — predicting synthetic lethal gene pairs in fission yeast
 - Pocket prediction: [burrow](https://github.com/zoidpuff/pocket-detect-agents) — BURROW, fast protein ligand-binding pocket detection and ranking
-- Ligand docking: [ADock](https://github.com/juliabuhmann/adock) — ADock is a protein–ligand docking engine for GPU 
-- Pocket similarity: [pocketcompare](https://github.com/zoidpuff/pocketcompare-agents) — pocketcompare creates fast, ligand-free fingerprints as descriptors of protein binding pockets.
-- Kinase targets: [agentKinaseSubPred](https://github.com/JulianvanGerwen/agentKinaseSubPred) — Predicting human kinase targets 
-- Kinase activity: [agentKinaseActivity](https://github.com/JulianvanGerwen/agentKinaseActivity) — Predicting human kinase activities from phosphoproteomics data 
-- Protein stability [physDDG](https://github.com/DennisGankin/physDDG) — physDDG - physics-inspired protein mutation stability predictor
-- Coloc analysis - 
+- Ligand docking: [ADock](https://github.com/juliabuhmann/adock) — ADock is a protein–ligand docking engine for GPU
+- Pocket similarity: [pocketcompare](https://github.com/zoidpuff/pocketcompare-agents) — pocketcompare creates fast, ligand-free fingerprints as descriptors of protein binding pockets
+- Kinase targets: [agentKinaseSubPred](https://github.com/JulianvanGerwen/agentKinaseSubPred) — predicting human kinase targets
+- Kinase activity: [agentKinaseActivity](https://github.com/JulianvanGerwen/agentKinaseActivity) — predicting human kinase activities from phosphoproteomics data
+- Protein stability: [physDDG](https://github.com/DennisGankin/physDDG) — physDDG, a physics-inspired protein mutation stability predictor
+- Colocalization analysis: [hackathon_colocalization](https://github.com/marcmuellerETHZ/hackathon_colocalization) — a benchmark of GWAS–molecular-QTL colocalization methods under LD-reference mismatch, and the new methods the agents built and tested against it
 - Orthology prediction: [Ancestra](https://github.com/evocellnet/hackathon-p10-orthology-prediction) — Ancestra infers hierarchical orthologous groups (HOGs) from a set of proteomes
-- MS analysis [Vulcan](https://github.com/pedrobeltrao/vulcan-proteomics) — Vulcan - GPU/CPU co-designed engine for repository-scale MS proteomics
+- MS analysis: [Vulcan](https://github.com/pedrobeltrao/vulcan-proteomics) — Vulcan, a GPU/CPU co-designed engine for repository-scale MS proteomics
+
+## Phase 2: discovery projects
+
+- Human kinase signalling: [agentic-kinase-signalling](https://github.com/pedrobeltrao/agentic-kinase-signalling) ([website](https://pedrobeltrao.github.io/agentic-kinase-signalling/)) — novel functions for the 100 least-studied human kinases and systems-level signalling insights from phosphoproteomics, CPTAC and CRISPR data (the most specific of three kinase discovery prompts)
+- Origin of multicellularity: [hackathon-phase2-multicellularity](https://github.com/evocellnet/hackathon-phase2-multicellularity) — do lineages that independently became multicellular change their gene content in the same ways? (uses Ancestra)
+- Gene function from co-essentiality: [Coessentiality-Gene-Function](https://github.com/cancergenetics/ai-hackathon-Coessentiality-Gene-Function) — pre-registered, calibrated function predictions for uncharacterised human genes from DepMap co-essentiality
+- Evolution of protein pockets: [pocket-evolution-agentic](https://github.com/juliabuhmann/pocket-evolution-agentic) — do ligand-binding pockets evolve by descent or by convergence across the protein universe?
+- Pockets between protein chains: [pocket-dimers-agentic](https://github.com/juliabuhmann/pocket-dimers-agentic) — single-chain vs multi-chain ligand pockets in experimental structures and predicted protein dimers
 
 ## AI disclosure header
 
