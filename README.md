@@ -29,10 +29,12 @@ The hackathon had two phases:
 
 - Human kinase signalling: [agentic-kinase-signalling](https://github.com/pedrobeltrao/agentic-kinase-signalling) ([website](https://pedrobeltrao.github.io/agentic-kinase-signalling/)) — novel functions for the 100 least-studied human kinases and systems-level signalling insights from phosphoproteomics, CPTAC and CRISPR data (the most specific of three kinase discovery prompts)
 - Origin of multicellularity: [hackathon-phase2-multicellularity](https://github.com/evocellnet/hackathon-phase2-multicellularity) — do lineages that independently became multicellular change their gene content in the same ways? (uses Ancestra)
-- Gene function from co-essentiality: [Coessentiality-Gene-Function](https://github.com/cancergenetics/ai-hackathon-Coessentiality-Gene-Function) — pre-registered, calibrated function predictions for uncharacterised human genes from DepMap co-essentiality
+- Protein structure clock: [afdbc-structure-evolution](https://github.com/evocellnet/hackathon-phase2-afdbc-structure-evolution) — Is protein structure a good molecular clock?
+- Hexapoda neuropeptides: [hexapoda-neuropeptides](https://github.com/evocellnet/hackathon-phase2-hexapoda-neuropeptides) - Track the evolution of ligand–receptor pairs across about 450 million years of hexapod evolution (uses Ancestra)
 - Evolution of protein pockets: [pocket-evolution-agentic](https://github.com/juliabuhmann/pocket-evolution-agentic) — do ligand-binding pockets evolve by descent or by convergence across the protein universe?
 - Pockets between protein chains: [pocket-dimers-agentic](https://github.com/juliabuhmann/pocket-dimers-agentic) — single-chain vs multi-chain ligand pockets in experimental structures and predicted protein dimers
-
+- Gene function from co-essentiality: [Coessentiality-Gene-Function](https://github.com/cancergenetics/ai-hackathon-Coessentiality-Gene-Function) — pre-registered, calibrated function predictions for uncharacterised human genes from DepMap co-essentiality
+- 
 ## AI disclosure header
 
 Each project repository and report starts with a human-written disclosure:
