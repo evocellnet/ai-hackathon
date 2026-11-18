@@ -34,7 +34,7 @@ The hackathon had two phases:
 - Evolution of protein pockets: [pocket-evolution-agentic](https://github.com/juliabuhmann/pocket-evolution-agentic) — do ligand-binding pockets evolve by descent or by convergence across the protein universe?
 - Pockets between protein chains: [pocket-dimers-agentic](https://github.com/juliabuhmann/pocket-dimers-agentic) — single-chain vs multi-chain ligand pockets in experimental structures and predicted protein dimers
 - Gene function from co-essentiality: [Coessentiality-Gene-Function](https://github.com/cancergenetics/ai-hackathon-Coessentiality-Gene-Function) — pre-registered, calibrated function predictions for uncharacterised human genes from DepMap co-essentiality
-- 
+  
 ## AI disclosure header
 
 Each project repository and report starts with a human-written disclosure:
